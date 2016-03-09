@@ -1,0 +1,92 @@
+{
+	"type":"object",
+	"$schema": "http://json-schema.org/draft-03/schema",
+	"id": "http://jsonschema.net",
+	"required": false,
+	"properties": { 
+		"branches": { 
+			"type": "array", 
+			"id": "http://jsonschema.net/branches", 
+			"required": false, 
+			"items": { 
+				"type": "object", 
+				"id": "http://jsonschema.net/branches/0", 
+				"required": false, 
+				"properties": { 
+					"desc": { 
+						"type": "string", 
+						"id": "http://jsonschema.net/branches/0/desc", 
+						"required": false 
+					}, 
+					"events": { 
+						"type": "array", 
+						"id": "http://jsonschema.net/branches/0/events", 
+						"required": false, 
+						"items": { 
+							"type": "object", 
+							"id": "http://jsonschema.net/branches/0/events/0", 
+							"required": false, 
+							"properties": { 
+								"desc": { 
+									"type": "string", 
+									"id": "http://jsonschema.net/branches/0/events/0/desc", 
+									"required": false 
+								}, 
+								"end": { 
+									"type": "string", 
+									"id": "http://jsonschema.net/branches/0/events/0/end", 
+									"required": false 
+								}, 
+								"id": { 
+									"type": "number", 
+									"id": "http://jsonschema.net/branches/0/events/0/id", 
+									"required": false 
+								}, 
+								"promo": { 
+									"type": "string", 
+									"id": "http://jsonschema.net/branches/0/events/0/promo", 
+									"required": false 
+								}, 
+								"start": { 
+									"type": "string", 
+									"id": "http://jsonschema.net/branches/0/events/0/start", 
+									"required": false 
+								}, 
+								"subtitle": { 
+									"type":"string", 
+									"id": "http://jsonschema.net/branches/0/events/0/subtitle", 
+									"required":false 
+								}, 
+								"title": { 
+									"type": "string", 
+									"id": "http://jsonschema.net/branches/0/events/0/title", 
+									"required": false 
+								},
+								"joined": {
+									"type": "boolean",
+									"id": "http://jsonschema.net/branches/0/events/0/joined",
+									"required": false
+								}
+							} 
+						}
+					}, 
+					"name": { 
+						"type": "string", 
+						"id": "http://jsonschema.net/branches/0/name", 
+						"required": false 
+					} 
+				} 
+			} 
+		}, 
+		"subtitle": { 
+			"type":"string", 
+			"id": "http://jsonschema.net/subtitle", 
+			"required": false 
+		}, 
+		"title": { 
+			"type": "string", 
+			"id": "http://jsonschema.net/title", 
+			"required": false 
+		} 
+	}
+}

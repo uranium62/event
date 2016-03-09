@@ -1,0 +1,107 @@
+{
+	"title" : "Timetable",
+	"subtitle": "...",
+	"branches" : [{
+		"name": "Paris",
+		"desc": "Champs-Élysée",
+		"events": [{
+			"id": 101,
+			"title": "Miles Davis",
+			"subtitle": "Kind of Blue",
+			"start": "2013-01-28T20:00:00.000Z",
+			"end":   "2013-01-28T21:30:00.000Z",
+			"promo": "",
+			"desc": "",
+			"joined": false
+		}, {
+			"id": 102,
+			"title": "John Coltrane",
+			"subtitle": "A Love Supreme",
+			"start": "2013-01-28T21:45:00.000Z",
+			"end":   "2013-01-28T22:30:00.000Z",
+			"promo": "",
+			"desc": "", 
+			"joined": false
+		}, {
+			"id": 103,
+			"title": "The Dave Brubeck Quartet",
+			"subtitle": "Time Out",
+			"start": "2013-01-28T22:30:00.000Z",
+			"end":   "2013-01-29T01:00:00.000Z",
+			"promo": "",
+			"desc": "",
+			"joined": false
+		}]
+	}, {
+		"name": "Paris",
+		"desc": "Élysée Palace",
+		"events": [{
+			"id": 201,
+			"title": "Charles Mingus",
+			"subtitle": "Mingus Ah Um",
+			"start": "2013-01-28T20:15:00.000Z",
+			"end":   "2013-01-28T21:00:00.000Z",
+			"promo": "",
+			"desc": "",
+			"joinded": false
+		}, {
+			"id": 202,
+			"title": "Cannonball Adderley",
+			"subtitle": "Somethin' Else",
+			"start": "2013-01-28T21:00:00.000Z",
+			"end":   "2013-01-28T23:00:00.000Z",
+			"promo": "",
+			"desc": "",
+			"joined": false
+		}, {
+			"id": 203,
+			"title": "Cannonball Adderley",
+			"subtitle": "Somethin' Else",
+			"start": "2013-01-28T23:00:00.000Z",
+			"end":   "2013-01-29T02:00:00.000Z",
+			"promo": "",
+			"desc": "",
+			"joinded": false
+		}]
+	}, {
+		"name": "Paris 2",
+		"desc": "Arc de Triomphe",
+		"events": [{
+			"id": 301,
+			"title": "Herbie Hancock",
+			"subtitle": "Maiden Voyage",
+			"start": "2013-01-28T20:00:00.000Z",
+			"end":   "2013-01-28T22:00:00.000Z",
+			"promo": "",
+			"desc": "",
+			"joined": false
+		}, {
+			"id": 302,
+			"title": "Art Blakey &amp; the Jazz Messengers",
+			"subtitle": "Moanin'",
+			"start": "2013-01-28T22:30:00.000Z",
+			"end":   "2013-01-28T23:30:00.000Z",
+			"promo": "", 
+			"desc": "",
+			"joined": false
+		}, {
+			"id": 303,
+			"title": "John Coltrane",
+			"subtitle": "Giant Steps",
+			"start": "2013-01-29T01:30:00.000Z",
+			"end":   "2013-01-29T02:30:00.000Z",
+			"promo": "",
+			"desc": "",
+			"joined": false
+		}, {
+			"id": 304,
+			"title": "The Monk",
+			"subtitle": "Brilliant Corners",
+			"start": "2013-01-29T02:30:00.000Z",
+			"end":   "2013-01-29T03:00:00.000Z",
+			"promo": "",
+			"desc": "",
+			"joined": false
+		}]
+	}]
+}

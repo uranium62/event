@@ -1,0 +1,109 @@
+<div class="prog">
+
+	<h1 class="prog__title"    ng-bind="model.title"></h1>
+	<p  class="prog__subtitle" ng-bind="model.subtitle"></p>
+
+
+	<!-- nav -->
+	<div class="nav">
+		<a class="nav__prev" href="#" ng-click="api.navigate.prev()">
+			<i class="icon icon-navigation-white icon-navigation-white-ic_chevron_left_white_24dp"></i>
+		</a>
+		<a class="nav__menu" href="#" ng-click="api.navigate.menu()">
+			<i class="icon icon-navigation-white icon-navigation-white-ic_menu_white_24dp"></i>
+		</a>
+		<a class="nav__next" href="#" ng-click="api.navigate.next()">
+			<i class="icon icon-navigation-white icon-navigation-white-ic_chevron_right_white_24dp"></i>
+		</a>
+	</div>
+	<!-- END nav -->
+
+
+	<div class="prog__body">
+
+	
+		<!-- timeline -->
+		<div class="tline">
+			<div class="tline__ind">
+				<ul>
+					<li class="tline__ind__it" ng-repeat="time in (api.timeline | split:3600)" ng-bind="time | hhmm"></li>
+				</ul>
+				<div class="tline__ind__slider  js-nav-slider"></div>
+			</div>
+			<div class="tline__cur">
+				<ul class="js-nav-tliner">
+					<li class="tline__cur__it" ng-repeat="time in (api.timeline | split:1800)" ng-bind="time | hhmm"></li>
+				</ul>
+			</div>
+		</div>
+		<!-- END timeline -->
+
+
+		<div class="branches">	
+
+			<!-- branch -->
+			<div class="branches-it-wrap js-nav-branch">			
+				<div class="branches__it" ng-repeat="branch in model.branches">
+
+					<!-- event -->
+					<ul class="event__tline  js-nav-branch">
+						<li class="event-info-wrap" ng-repeat="event in branch.events" ng-style="{'width': event.ext.width + 'px', 'left': event.ext.position + 'px'}" >
+							<div class="event__info__joined" ng-class="event.joined ? 'event__info__joinded--active' : 'event__info__joinded--inactive'" ng-click="api.join(event)">
+								<i class="icon icon-navigation-white icon-navigation-white-ic_check_white_24dp"></i>
+							</div>
+							<div class="event__info" ng-click="api.show(event)">
+								<h3 class="event__info__title"    ng-bind="event.title"></h1>
+								<p  class="event__info__subtitle" ng-bind="event.subtitle"></p>			
+							</div>		
+						</li>
+					</ul>
+					<!-- END event -->
+
+				</div>		
+			</div>	
+			<!-- END branch -->
+
+
+			<!-- menu -->
+			<div class="branches-menu-wrap  js-nav-brmenu">
+				<a href="#" class="nav__close" ng-click="api.navigate.close()">
+					<i class="icon icon-navigation-grey600 icon-navigation-grey600-ic_close_grey600_24dp"></i>
+				</a>
+				<ul class="branches__menu">
+					<li class="branches__menu__it" ng-repeat="branch in model.branches">
+						<div class="branches__info">
+							<h2 class="branches__info__name" ng-bind="branch.name"></h1>
+							<p  class="branches__info__desc" ng-bind="branch.desc"></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- END menu -->
+
+
+			<!-- event-view -->
+			<div class="branches-event-wrap  js-nav-event" ng-swipe-left="api.navigate.hide_left()" ng-swipe-right="api.navigate.hide_right()">
+				<a href="#" class="nav__close" ng-click="api.navigate.hide()">
+					<i class="icon icon-navigation-grey600 icon-navigation-grey600-ic_close_grey600_24dp"></i>
+				</a>
+				<ul class="event-view-wrap">
+					<li class="event-view" ng-repeat="event in api.events" ng-show="event.ext.show">
+						<h3 class="event-view__title"   ng-bind="event.title"></h1>
+						<p class="event-view__subtitle" ng-bind="event.subtitle"><p>
+						<div class="event-view__time">	
+							<span ng-bind="event.start | hhmm"></span> - 
+							<span ng-bind="event.end   | hhmm"></span>
+						</div>	
+						<div    class="event-view__html" ng-bind-html="event.desc_html | toTrust"></div>
+						<button class="event-view__add"  ng-hide="event.joined" ng-click="api.join(event)">JOIN</button>	
+						<button class="event-view__del"  ng-show="event.joined" ng-click="api.join(event)">DISJOIN</button>
+					</li>
+				</ul> 
+			</div>
+			<!-- END event-view-->
+
+		</div>
+
+		
+	</div>
+</div>

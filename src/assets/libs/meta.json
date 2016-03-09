@@ -1,0 +1,18 @@
+{
+	"libs" : [{
+		"name": "underscore",
+		"version": "1.7.0"
+	}, {
+		"name": "moment",
+		"version": "2.8.3"
+	}, {
+		"name": "modernizr",
+		"version": "2.8.3"
+	}, {
+		"name": "angular",
+		"version": "1.3.0"
+	}, {
+		"name": "angular-touch",
+		"version": "1.3.9"
+	}]
+}

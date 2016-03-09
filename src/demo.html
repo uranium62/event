@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Demo</title>
+
+<!--[if lte IE 8]>
+    <link rel="stylesheet" type="text/css" href="assets/css/grids-responsive-old-ie.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+    <link rel="stylesheet" type="text/css" href="assets/css/grids-responsive.css">
+<!--<![endif]-->
+
+	<link rel="stylesheet" type="text/css" href="assets/css/font.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/grids.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/normalize-min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/css-sprite/sprite-navigation-black.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/css-sprite/sprite-navigation-white.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/css-sprite/sprite-navigation-grey600.css">
+
+</head>
+<body>
+	
+	<div class="content" ng-controller="demoController">
+		<div class="pure-g">
+			<div class="pure-u-1">
+
+				<div class="">
+					<button class="">Table</button>
+					<button class="">Maker</button>
+				</div>
+
+			</div>
+			<div class="pure-u-1">
+				
+				<events-table model="events"></events-table>
+
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/libs/angular/angular.min.js"></script>
+	<script type="text/javascript" src="assets/libs/angular-touch/angular-touch.min.js"></script>
+	<script type="text/javascript" src="assets/libs/underscore/underscore-min.js"></script>
+	<script type="text/javascript" src="assets/libs/moment/moment.js"></script>
+
+	<script type="text/javascript" src="app/shared/events/eventsDirective.js"></script>
+	<script type="text/javascript" src="app/shared/editor/editorDirective.js"></script>
+
+	<script type="text/javascript" src="app/components/demo/demoService.js"></script>
+	<script type="text/javascript" src="app/components/demo/demoController.js"></script>
+
+	<script type="text/javascript" src="app/app.module.js"></script>
+</body>
+</html>
